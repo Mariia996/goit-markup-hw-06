@@ -443,6 +443,28 @@
   transform: translateY(0);
 }
 
+.card-footer {
+  padding: 24px 20px;
+}
+
+.card-footer .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.card-footer .text {
+  font-size: 16px;
+  line-height: 1.9;
+  margin: 0;
+  color: var(--text-main-color);
+}
+
 /* ======== END EXAMPLES ======== */
 
 /* ======== MODAL WINDOW ======== */
@@ -481,6 +503,7 @@
 
   min-height: 580px;
   min-width: 528px;
+  padding: 40px;
 
   background-color: #fff;
 }
@@ -505,4 +528,108 @@
   cursor: pointer;
 }
 
-/* ======== END MODAL WINDOW ======== */
+.close-modal-button:hover .close-button-icon,
+.close-modal-button:focus .close-button-icon {
+  fill: var(--accent-color);
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-text-color);
+
+  margin-bottom: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+}
+
+.form-group input {
+  padding-left: 42px;
+  padding-right: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-input:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.form-input:focus-within .input-icon {
+  fill: var(--accent-color);
+}
+
+.form-group.comment {
+  margin-bottom: 20px;
+}
+
+.form-group.comment textarea {
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  padding: 12px 16px;
+}
+
+.form-group.comment textarea:hover,
+.form-group.comment textarea:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.form-group.comment textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.667;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.agreement {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.agreement label {
+  margin-left: 8px;
+}
+
+.agreement-conditions-link {
+  color: var(--accent-color);
+}
+
+.main-button.send-modal-btn {
+  display: block;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.icon {
+  display: inline-block;
+  position: absolute;
+  top: 28px;
+  left: 12px;
+}
+
+/* ======== END MODAL WINDOW ======== */ ;
