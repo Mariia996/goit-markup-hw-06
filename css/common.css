@@ -207,23 +207,16 @@ p {
 
 .container.all-footer {
   display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  max-width: 270px;
-  margin-right: 70px;
-}
-
-.footer-container.join-container {
-  padding-top: 68px;
+  width: 270px;
 }
 
 .logo.logo-for-footer {
-  display: flex;
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -232,11 +225,14 @@ p {
 }
 
 .footer-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 }
 
 .address-container {
   display: flex;
+  align-items: center;
 }
 
 .address-list {
@@ -273,12 +269,6 @@ p {
   color: var(--accent-color);
 }
 
-.footer-container-social {
-  display: flex;
-  flex-direction: column;
-  max-width: 270px;
-}
-
 .card-footer {
   padding: 24px 20px;
 }
@@ -310,11 +300,42 @@ p {
   color: var(--primary-white-color);
 }
 
+.social-list-footer {
+  display: flex;
+}
+
 .social-link.social-footer {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   color: #ffffff;
 }
+
+.footer-container.mailing-container {
+  width: 570px;
+}
+
+.main-button.send-btn {
+  position: relative;
+}
+
+.main-button.send-btn::after {
+  content: '';
+  /* position: absolute;
+  top: 13px;
+  right: 18px; */
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-image: url(../img/icons/send.svg);
+  background-position: contain;
+  background-repeat: no-repeat;
+}
+
+/* .send-icon {
+  fill: currentColor;
+} */
 
 /* ======== END FOOTER ======== */
 
