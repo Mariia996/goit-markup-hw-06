@@ -317,13 +317,12 @@ p {
   margin-left: 10px;
 
   background-image: url(../img/icons/send.svg);
-  background-position: contain;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .form-mailing {
   display: flex;
-  margin-right: 12px;
 }
 
 .form-field-mailing {
